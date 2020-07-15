@@ -101,7 +101,7 @@ body {
         headers: {
         'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ emailAddress, firstName, lastName,phone})
+        body: JSON.stringify({ firstName, lastName, emailAddress,phone})
       });
       const data = await response.json(); 
       alert('Customer created');
