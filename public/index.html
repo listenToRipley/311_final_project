@@ -125,12 +125,12 @@ body {
         let tbody = "";
        for(let i =0; i < data.length; i ++){
            const customer = data[i];
-           const {id, firstName, lastName, emailAddress, phone} = customer;
+           const {id, first_name, last_name, email_address, phone} = customer;
         tbody  += `<tr>
                             <th scope="row">${id}</th>
-                            <td>${firstName}</td>
-                            <td>${lastName}</td>
-                            <td>${emailAddress}</td>
+                            <td>${first_name}</td>
+                            <td>${last_name}</td>
+                            <td>${email_address}</td>
                             <td>${phone}</td>
                             <td><a href="#" onclick="viewCustomer(${id})">View</a></td>
                         </tr>`
